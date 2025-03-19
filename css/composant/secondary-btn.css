@@ -1,0 +1,7 @@
+.secondary-btn{
+    background-color:  orangered;
+    color: white;
+    padding: 1rem;
+    font-size: 15px;
+    cursor: pointer;
+}

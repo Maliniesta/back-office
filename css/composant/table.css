@@ -1,0 +1,58 @@
+#form-utilisateur{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+#form-produit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.tableau {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5rem;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #3f3d3d;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.stock {
+    text-align: center;
+}
+
+.stock span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+}

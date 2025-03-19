@@ -1,0 +1,25 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    text-align: center;
+    width: 50%;
+    max-width: 500px; /* Pour éviter qu'il soit trop large sur grands écrans */ 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-content {
+    background-color: #333;
+    padding: 2rem;
+    border-radius: 8px;
+    color: white;
+
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}

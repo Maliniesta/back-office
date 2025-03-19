@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Market</title>
+    <link rel="stylesheet" href="css/composant/primary-btn.css">
+    <link rel="stylesheet" href="css/composant/secondary-btn.css">
+    <link rel="stylesheet" href="css/composant/table.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container-vertical">
+        <div class="navbar">
+            <div class="menu">
+                <img src="imagesProduits/icons/logo-my-market.png">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Produits</a></li>
+                    <li><a href="#">Commandes</a></li>
+                    <li><a href="#">Clients</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fixed">
+        <div class="banner">
+            <h2>Liste de produit</h2>
+        </div>
+
+        <!-- Contenu principal -->
+        <main>
+
+            <div class="search">
+                <img src="imagesProduits/icons/search.png">
+                <input type="text" placeholder="Rechercher un produit" id="search-bar">
+                <button class="secondary-btn" id="primary-btn">Ajouter un produit</button>
+            </div>
+
+            <div class="tableau">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Référence</th>
+                            <th>Catégorie</th>
+                            <th>Libellé</th>
+                            <th>Prix</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table">
+                        <!-- Les produits seront ajoutés ici -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <span class="close" id="close-modal">&times;</span>
+                    <h2 id="modal-title">Ajouter/Modifier un produit</h2>
+                    <form id="form-produit">
+                        <label for="ref">Référence:</label><br>
+                        <input type="text" id="ref" name="ref" required><br><br>
+                        <label for="cat">Catégorie:</label><br>
+                        <input type="text" id="cat" name="cat" required><br><br>
+                        <label for="libelle">Libellé:</label><br>
+                        <input type="text" id="libelle" name="libelle" required><br><br>
+                        <label for="prix">Prix:</label><br>
+                        <input type="number" id="prix" name="prix" required><br><br>
+                        <label for="stock">Stock:</label><br>
+                        <input type="number" id="stock" name="stock" required><br><br>
+                        <button type="submit" class="secondary-btn">Enregistrer</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Détails du produit -->
+            <div class="details" id="details">
+                <div id="details-content">
+                    <!-- Les détails du produit seront ajoutés ici -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

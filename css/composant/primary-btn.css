@@ -1,0 +1,16 @@
+#primary-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  orangered;
+    color: white;
+    padding: 1rem;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#primary-btn img{
+    width: 20px;
+    height: 20px;
+}
