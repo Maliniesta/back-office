@@ -56,3 +56,22 @@ th {
     border-radius: 50%;
     background-color: green;
 }
+
+@media screen and (max-width: 480px) {
+    .tableau {
+        padding: 01rem; 
+    }
+
+    table {
+        width: auto; 
+        overflow-x: auto; 
+        display: block; 
+    }
+
+    th, td {
+        padding: 2px; 
+        font-size: 0.75rem; 
+        text-align: center;
+        
+    }
+}
